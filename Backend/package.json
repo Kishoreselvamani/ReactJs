@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+   "server" : "nodemon index.js --w ",
+   "client": "npm run start --prefix ../demo ",
+   "dev": "currently --kill-others-on-fail \"npm run client\" \"npm run server\""
+  },
+  "proxy" : "http://localhost:4000/",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cookie": "^0.6.0",
+    "currently": "^0.0.8",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.2"
+  }
+}
